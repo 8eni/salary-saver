@@ -1,9 +1,15 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic);
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    box-sizing: border-box;
+    background: #000;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 ::-moz-selection {
@@ -15,7 +21,14 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
+body{
+    font:300 14px/14px 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+input{
+    color: #2b2b2b;
+}
 hr {
     display: block;
     height: 1px;
@@ -56,11 +69,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
+.wrapper{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    background: #2b2b2b;
+    overflow: auto;
+}
+label{
+    text-transform: uppercase;
+    color: #808080;
+}
+.column.two.clear{
+    border-right: none;
+}
+.wrapper.device{
+    max-width: 640px;
+}
+.column {
+  display: block;
+  float: left;
+  height: auto;
+  line-height: 34px;
+  padding: 110px 0;
+  width: 100%;
+  border-top: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+}
+.column.two {
+  border-right: 1px solid #5e5e5e;
+  height: 100px;
+  line-height: 21px;
+  padding: 26px 0;
+  width: 50%;
+  border-top: none;
+  border-bottom: none;
+}
+#totalLeft {
+  font-size: 21px;
+  font-weight: 100;
+}
+#daysLeft {
+  font-size: 21px;
+  font-weight: 100;
+}
+#lowestSpend {
+  font-size: 21px;
+  font-weight: 100;
+}
+#highestSpend {
+  font-size: 21px;
+  font-weight: 100;
+}
+#dailySpend {
+  font-size: 48px;
+  font-weight: 100;
+}
 
 
 
